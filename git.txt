@@ -1,0 +1,90 @@
+将本地项目提交到git仓库************************************************
+
+1 git init  			实例化启动git
+
+  git add 文件名                将文件添加到暂存区
+
+  git commit -m “描述”          添加到本地仓库
+
+  git log  			查看提交日志
+
+  git reset --hard HEAD^        退回上一次提交的版本
+
+  git reflog                    查看每次提交的版本id
+
+  git reset --hard 版本id       回到指定的版本
+
+  git diff HEAD -- 文件名       命令可以查看工作区和版本库里面最新版本的区别
+ 
+  git checkout -- 文件名        撤销对文件的修改让这个文件回到最近一次git commit或git add时的状态
+  	
+
+将git仓库内的文件提交到github仓库***************************************
+  
+ git remote add origin 地址     添加链接地址
+ git remote rm origin           删除现在的链接地址
+
+ git remote -v         	        查看链接
+
+ git pull origin master         同步远程仓库
+
+ git push -u origin master      将本地仓库提交到远程仓库
+
+ git clone git仓库地址 	 	将github仓库克隆到本地
+
+ github设置ssh*********************************************************
+ http://blog.csdn.net/lsyz0021/article/details/52064829 
+ ssh-keygen -t rsa -C "your email"
+
+ git 分支管理**********************************************************
+
+ git checkout -b dev             创建并切换名为dev的分支
+
+ git checkout  dev               切换到dev分支
+
+ git branch                      查看所有分支
+
+ git branch   dev                创建dev分支
+
+ git merge  dev                  合并dev分支到当前分支
+
+ git branch -d dev                删除dev分支
+ 
+ git branch -D <name>             删除一个未合并的分支
+
+ git 解决冲突
+
+
+*****************************************
+
+1 在github上新建一个仓库   
+2 在本地新建一个文件夹 
+3 在文件夹中 克隆 git clone +地址
+4 进入克隆下来的文件夹 将自己的项目粘贴到这个文件夹
+5 git init  git add +文件名  git commit -m '描述' git push -u origin master
+
+
+
+
+想把代码上传到github上
+1、创建git仓库 git init
+2、添加上传地址   git remote add origin 地址 
+3、把要上传的项目 git add .
+4、在commit 提交到本地仓库
+5、同步远程仓库  git pull origin master （可以没有）
+6、提交  git push -u origin master 
+
+
+1 给你一个github库地址
+2、克隆下来之后，你开发。添加到本地库
+3、提交代码
+
+
+
+
+
+
+
+
+
+ 
